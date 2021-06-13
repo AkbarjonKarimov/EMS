@@ -58,7 +58,7 @@
                 <div id="collapseSystem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('countries.index') }}">Countries</a>
-                        <a class="collapse-item" href="cards.html">State</a>
+                        <a class="collapse-item" href="{{ route('states.index') }}">State</a>
                         <a class="collapse-item" href="cards.html">Department</a>
                         <a class="collapse-item" href="cards.html">City</a>
                     </div>
@@ -110,12 +110,12 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->username}}</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> Auth::user()->username </span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-inS"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

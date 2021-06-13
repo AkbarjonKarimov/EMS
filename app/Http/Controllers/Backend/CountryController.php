@@ -29,4 +29,16 @@ class CountryController extends Controller
     public function edit(Country $country){
         return view('countries.edit',compact('country'));
     }
+
+    public function update(CountryStoreRequest $request, Country $country){
+        $country->update($request->validated());
+
+        return redirect()->route('countries.index')->with('message','Country Updated Successfully');
+    }
+
+    public function destroy(Country $country){
+        $country->delete();
+
+        return redirect()->route('countries.index')->with('message','Country Deleted Successfully');
+    }
 }
