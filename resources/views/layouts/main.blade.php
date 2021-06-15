@@ -59,7 +59,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="{{ route('countries.index') }}">Countries</a>
                         <a class="collapse-item" href="{{ route('states.index') }}">State</a>
-                        <a class="collapse-item" href="cards.html">Department</a>
+                        <a class="collapse-item" href="{{ route('departments.index') }}">Department</a>
                         <a class="collapse-item" href="{{ route('cities.index') }}">City</a>
                     </div>
                 </div>
